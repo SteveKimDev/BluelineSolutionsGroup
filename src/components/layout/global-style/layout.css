@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* Landscape View on Mobile Device */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .screen-orientation::after {
+    content: 'Best Viewed In Portrait Mode.';
+    color: #ffffff;
+    background-color: #222222;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 48vh;
+  }
+  .main-content {
+    display: none;
+  }
+}
+
+/* ///// FONTS ///// */
+/* Montserrat & JOSEFIN SANS */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ///// CUSTOM CSS ///// */
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+  background-color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
