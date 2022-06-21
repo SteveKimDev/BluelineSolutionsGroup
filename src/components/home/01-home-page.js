@@ -38,8 +38,6 @@ const HomePage = () => {
         offset={2}
         speed={0.5}
         style={{
-          color: 'red',
-          fontSize: '200px',
           zIndex: 100,
         }}
       >
