@@ -25,17 +25,17 @@ const HomePage = () => {
         </ParallaxLayer>
 
         {/* page 1 */}
-        <ParallaxLayer offset={0} speed={0.2}>
+        <ParallaxLayer offset={0} speed={0.1}>
           <Intro />
         </ParallaxLayer>
 
         {/* page 2 */}
-        <ParallaxLayer offset={1} speed={0.2}>
+        <ParallaxLayer offset={1} speed={0.1}>
           <Expo />
         </ParallaxLayer>
 
         {/* page 3 */}
-        <ParallaxLayer offset={2} speed={0.2}>
+        <ParallaxLayer offset={2} speed={0.15}>
           <PlaneImg />
         </ParallaxLayer>
 
@@ -45,7 +45,7 @@ const HomePage = () => {
         </ParallaxLayer>
 
         {/* page 4 */}
-        <ParallaxLayer offset={3} speed={0.1}>
+        <ParallaxLayer offset={3} speed={0}>
           <ServiceDescription />
         </ParallaxLayer>
 

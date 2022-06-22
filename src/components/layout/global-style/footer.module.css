@@ -18,6 +18,9 @@
   .footer-div {
     padding-top: 100px;
   }
+  .footer-div .logo {
+    width: 30vw;
+  }
 }
 
 @media (max-width: 575px) {
