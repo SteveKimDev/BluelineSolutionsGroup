@@ -29,10 +29,10 @@ html {
 }
 
 body {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #ffffff;
-  background-color: #222222;
+  font-size: 1rem !important;
+  font-weight: 300 !important;
+  color: #ffffff !important;
+  background-color: #0d1117 !important;
 }
 
 h1,

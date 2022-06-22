@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
-import ExpoImg from './04a-expo-img';
 
 import * as Home from './home.module.css';
 
-const Expo = () => {
+const ServiceIntro = () => {
   // animation on scroll
   const [animate, toggle] = useState(false);
 
@@ -13,21 +12,20 @@ const Expo = () => {
   const fadeInUp1 = useSpring({
     opacity: animate ? 1 : 0,
     translateY: animate ? '0px' : '50px',
-    delay: 500,
     config: { duration: 1000 },
   });
 
   const fadeInUp2 = useSpring({
     opacity: animate ? 1 : 0,
     translateY: animate ? '0px' : '50px',
-    delay: 1000,
+    delay: 500,
     config: { duration: 1000 },
   });
 
   const fadeInUp3 = useSpring({
     opacity: animate ? 1 : 0,
     translateY: animate ? '0px' : '50px',
-    delay: 1500,
+    delay: 1000,
     config: { duration: 1000 },
   });
   return (
@@ -38,19 +36,21 @@ const Expo = () => {
           if (!animate) toggle(true);
         }}
       />
-      <div className={Home.expoSection}>
-        <animated.p style={fadeInUp1} className={Home.introDescription}>
-          We are proud to announce
+      <section className={Home.serviceIntroSection}>
+        <animated.h1 style={fadeInUp1} className={Home.introTitle1}>
+          Logistics
+        </animated.h1>
+        <animated.h1 style={fadeInUp2} className={Home.introTitle2}>
+          Services
+        </animated.h1>
+        <animated.p style={fadeInUp3} className={Home.introDescription}>
+          Blueline Solutions Group has established a reputation as a prominent
+          and respected provider for domestic and international logistics
+          services.
         </animated.p>
-        <animated.p style={fadeInUp2} className={Home.introDescription}>
-          we will be serving...
-        </animated.p>
-        <animated.div style={fadeInUp3}>
-          <ExpoImg />
-        </animated.div>
-      </div>
+      </section>
     </>
   );
 };
 
-export default Expo;
+export default ServiceIntro;

@@ -10,10 +10,10 @@ import Footer from '../layout/footer';
 
 import * as Home from './home.module.css';
 
-const HomePage = () => {
+const HomePageMobile = () => {
   return (
-    <div className={Home.desktopView}>
-      <Parallax pages={4.65}>
+    <div className={Home.mobileView}>
+      <Parallax pages={5.7}>
         {/* page 0 */}
         <ParallaxLayer
           sticky={{ start: 0, end: 1 }}
@@ -50,11 +50,11 @@ const HomePage = () => {
         </ParallaxLayer>
 
         {/* page 5 */}
-        <ParallaxLayer offset={4.3} speed={0}>
+        <ParallaxLayer offset={5.3} speed={0}>
           <Footer />
         </ParallaxLayer>
       </Parallax>
     </div>
   );
 };
-export default HomePage;
+export default HomePageMobile;

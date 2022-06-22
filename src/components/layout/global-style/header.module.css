@@ -1,0 +1,58 @@
+.header-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  margin: 20px;
+}
+
+.header-div .logo {
+  width: 8vw;
+}
+
+.link-div {
+  position: absolute;
+  right: 20px;
+}
+
+.link-div a {
+  color: #5f82ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-div a:hover {
+  color: #5f82ff;
+}
+
+.link-div a::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: ' ';
+  background-color: #5f82ff;
+  height: 0px;
+  width: 0px;
+  z-index: 100;
+  transition: width 0.5s linear;
+}
+
+.link-div a:hover::after {
+  height: 3px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .header-div .logo {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-div .logo {
+    width: 20vw;
+  }
+}

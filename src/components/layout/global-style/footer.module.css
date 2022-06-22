@@ -1,0 +1,27 @@
+.footer-div {
+  background-color: #0d1117;
+}
+
+.footer-div .logo {
+  width: 20vw;
+  margin: auto;
+  display: block;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .footer-div {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-div .logo {
+    width: 200px;
+  }
+}

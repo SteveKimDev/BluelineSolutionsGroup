@@ -28,7 +28,11 @@
   font-weight: 300;
 }
 
-.expo-div p {
+.expo-section {
+  margin: 30vh 10%;
+}
+
+.expo-section p {
   text-align: center;
   margin-bottom: 0;
 }
@@ -37,6 +41,54 @@
   margin: 30px auto 0;
   display: block;
   width: 30vw;
+}
+
+.service-intro-section {
+  margin-top: 20vh;
+  margin-left: 10%;
+  width: 50vw;
+}
+
+.plane-img {
+  width: 35vw;
+  float: right;
+  margin-top: 15vh;
+  margin-right: 10%;
+}
+
+.service-description-section {
+  background-color: #ffffff;
+  padding: 10vh 10%;
+}
+
+.serviceTitle {
+  color: #5f82ff;
+  font-size: 5vw;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service-description {
+  color: #0d1117;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.service-description-row-1,
+.service-description-row-2 {
+  margin: 50px 0 0;
+}
+
+.service-svg {
+  width: 10vw;
+  height: 12vh;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.service-description-last {
+  margin-top: 50px;
 }
 
 @media (min-width: 1680px) {
@@ -66,16 +118,50 @@
     font-size: 15vw;
     line-height: 12vh;
   }
-
   .introTitle1 {
     color: #5f82ff;
   }
-
   .intro-description {
     font-size: 4vw;
   }
+  .expo-section {
+    margin: 20vh 50px;
+  }
   .expo-img {
     width: 50vw;
+  }
+  .service-intro-section {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+  }
+  .plane-img {
+    width: 50vw;
+    float: right;
+    margin-top: 55vh;
+    margin-right: 50px;
+  }
+  .service-description-section {
+    padding: 100px 50px;
+  }
+  .serviceTitle {
+    font-size: 7vw;
+  }
+  .service-description {
+    font-size: 1rem;
+  }
+  .service-description-row-1,
+  .service-description-row-2 {
+    margin: 30px 0 0;
+  }
+  .service-svg {
+    width: 10vw;
+    height: 10vh;
+    margin: 0 auto;
+  }
+  .service-description-last {
+    margin-top: 30px;
   }
 }
 
@@ -104,5 +190,59 @@
   }
   .expo-img {
     width: 70vw;
+  }
+  .service-intro-section {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: auto;
+  }
+  .plane-img {
+    width: 70vw;
+    float: right;
+    margin-top: 50vh;
+    margin-right: 30px;
+  }
+  .service-description-section {
+    padding: 100px 30px;
+  }
+  .serviceTitle {
+    font-size: 10vw;
+  }
+  .service-svg {
+    width: 25vw;
+    height: 15vh;
+    margin: 20px auto 0;
+  }
+}
+
+/* screen view */
+
+@media (min-width: 992px) {
+  .tablet-view,
+  .mobile-view {
+    display: none;
+  }
+  .desktop-view {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+  .desktop-view,
+  .mobile-view {
+    display: none;
+  }
+  .tablet-view {
+    display: block;
+  }
+}
+
+@media (max-width: 575px) {
+  .desktop-view,
+  .tablet-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
   }
 }
