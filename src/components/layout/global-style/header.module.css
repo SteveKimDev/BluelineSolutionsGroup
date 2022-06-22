@@ -18,14 +18,14 @@
 }
 
 .link-div a {
-  color: #5f82ff;
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
 }
 
 .link-div a:hover {
-  color: #5f82ff;
+  color: #ffffff;
 }
 
 .link-div a::after {
@@ -33,7 +33,7 @@
   bottom: 0px;
   left: 0;
   content: ' ';
-  background-color: #5f82ff;
+  background-color: #ffffff;
   height: 0px;
   width: 0px;
   z-index: 100;

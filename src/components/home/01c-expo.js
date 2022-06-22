@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Waypoint } from 'react-waypoint';
 import { useSpring, animated } from 'react-spring';
+import ExpoImg from './01d-expo-img';
 
 import * as Home from './home.module.css';
 
-const Intro = () => {
+const Expo = () => {
   // animation on scroll
   const [animate, toggle] = useState(false);
 
@@ -12,24 +13,18 @@ const Intro = () => {
   const fadeInUp1 = useSpring({
     opacity: animate ? 1 : 0,
     translateY: animate ? '0px' : '50px',
+    delay: 500,
     config: { duration: 1000 },
   });
 
   const fadeInUp2 = useSpring({
     opacity: animate ? 1 : 0,
     translateY: animate ? '0px' : '50px',
-    delay: 500,
-    config: { duration: 1000 },
-  });
-
-  const fadeInUp3 = useSpring({
-    opacity: animate ? 1 : 0,
-    translateY: animate ? '0px' : '50px',
     delay: 1000,
     config: { duration: 1000 },
   });
 
-  const fadeInUp4 = useSpring({
+  const fadeInUp3 = useSpring({
     opacity: animate ? 1 : 0,
     translateY: animate ? '0px' : '50px',
     delay: 1500,
@@ -43,22 +38,19 @@ const Intro = () => {
           if (!animate) toggle(true);
         }}
       />
-      <section className={Home.introSection}>
-        <animated.h1 style={fadeInUp1} className={Home.introTitle1}>
-          Blueline
-        </animated.h1>
-        <animated.h1 style={fadeInUp2} className={Home.introTitle2}>
-          Solutions
-        </animated.h1>
-        <animated.h1 style={fadeInUp3} className={Home.introTitle3}>
-          Group
-        </animated.h1>
-        <animated.p style={fadeInUp4} className={Home.introDescription}>
-          Serving logistical services to domestic and international markets.
+      <div className={Home.expoSection}>
+        <animated.p style={fadeInUp1} className={Home.introDescription}>
+          We are proud to announce
         </animated.p>
-      </section>
+        <animated.p style={fadeInUp2} className={Home.introDescription}>
+          we will be serving...
+        </animated.p>
+        <animated.div style={fadeInUp3}>
+          <ExpoImg />
+        </animated.div>
+      </div>
     </>
   );
 };
 
-export default Intro;
+export default Expo;

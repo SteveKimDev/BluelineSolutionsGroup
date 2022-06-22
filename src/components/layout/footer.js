@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Logo from './logo';
+import Logo from './logo-with-text';
 
 import * as FooterStyle from './global-style/footer.module.css';
 

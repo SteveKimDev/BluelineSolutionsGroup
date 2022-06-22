@@ -36,7 +36,7 @@ const ServiceIntro = () => {
           if (!animate) toggle(true);
         }}
       />
-      <section className={Home.serviceIntroSection}>
+      <div className={Home.serviceIntroSection}>
         <animated.h1 style={fadeInUp1} className={Home.introTitle1}>
           Logistics
         </animated.h1>
@@ -48,7 +48,7 @@ const ServiceIntro = () => {
           and respected provider for domestic and international logistics
           services.
         </animated.p>
-      </section>
+      </div>
     </>
   );
 };

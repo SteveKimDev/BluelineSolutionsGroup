@@ -1,17 +1,17 @@
 import * as React from 'react';
 import Layout from '../components/layout/layout';
 import Seo from '../components/layout/seo';
-import HomePage from '../components/home/01-home-page';
-import HomePageTablet from '../components/home/01b-home-page-tablet';
-import HomePageMobile from '../components/home/01a-home-page-mobile';
+import IntroSection from '../components/home/01-intro-section';
+import ServiceSection from '../components/home/02-service-section';
+import ServiceDescriptionSection from '../components/home/07-service-description-section';
 
 // markup
 const IndexPage = () => (
   <Layout>
     <Seo title='Home' />
-    <HomePage />
-    <HomePageTablet />
-    <HomePageMobile />
+    <IntroSection />
+    <ServiceSection />
+    <ServiceDescriptionSection />
   </Layout>
 );
 
