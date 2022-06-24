@@ -14,7 +14,7 @@ const Logo = () => {
   return (
     <animated.div style={fadeIn}>
       <StaticImage
-        src='https://res.cloudinary.com/drqcptpet/image/upload/q_auto/v1655850943/Blueline%20Solutions%20Group/blueline-solutions-logo-no-text_zeeowh.webp'
+        src='https://res.cloudinary.com/drqcptpet/image/upload/q_auto/v1656093030/Blueline%20Solutions%20Group/blueline-solutions-logo_u8t1zi.webp'
         alt='logo img'
         className={`${HeaderStyle.logo}`}
       />

@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <div>
       <StaticImage
-        src='https://res.cloudinary.com/drqcptpet/image/upload/q_auto/v1655850344/Blueline%20Solutions%20Group/blueline-solutions-whit-text-logo_osdfvn.webp'
+        src='https://res.cloudinary.com/drqcptpet/image/upload/q_auto/v1656093034/Blueline%20Solutions%20Group/blueline-solutions-logo-white-text_imcy7f.webp'
         alt='logo img'
         className={`${FooterStyle.logo}`}
       />
