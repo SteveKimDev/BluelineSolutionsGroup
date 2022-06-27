@@ -1,24 +1,23 @@
 import * as React from 'react';
-import { CloudinaryContext, Video, Transformation } from 'cloudinary-react';
-import * as Home from './home.module.css';
 
-const EngineVideo = () => {
-  return (
-    <div className={Home.videoOverlay}>
-      <CloudinaryContext cloudName='drqcptpet'>
-        <Video
-          publicId='Blueline%20Solutions%20Group/engine_tepw84'
-          autoPlay
-          loop
-          muted
-          playsInline
-          className={Home.engineVideo}
-        >
-          <Transformation quality='auto' />
-        </Video>
-      </CloudinaryContext>
-    </div>
-  );
-};
+import * as Home from './home.module.css';
+class EngineVideo extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      url: 'https://res.cloudinary.com/drqcptpet/video/upload/q_auto/v1656091987/Blueline%20Solutions%20Group/engine_tepw84.mp4',
+    };
+  }
+
+  render() {
+    return (
+      <div className={Home.videoOverlay}>
+        <video className={Home.engineVideo} autoPlay loop muted playsInline>
+          <source src={this.state.url} type='video/mp4' />
+        </video>
+      </div>
+    );
+  }
+}
 
 export default EngineVideo;
