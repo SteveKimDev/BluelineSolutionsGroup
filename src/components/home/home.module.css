@@ -65,7 +65,8 @@
 }
 
 .engine-section {
-  padding: 25vh 10%;
+  /* padding: 25vh 10%; */
+  padding: 40vh 10%;
   position: relative;
 }
 
@@ -191,7 +192,8 @@
     width: 50vw;
   }
   .engine-section {
-    padding: 10vh 50px;
+    /* padding: 10vh 50px; */
+    padding: 20vh 50px;
   }
   .engine-title {
     font-size: 7vw;
@@ -257,7 +259,8 @@
     margin-left: calc(30vw - 60px);
   }
   .engine-section {
-    padding: 100px 20px;
+    /* padding: 100px 20px; */
+    padding: 150px 20px;
   }
   .engine-title {
     font-size: 10vw;
